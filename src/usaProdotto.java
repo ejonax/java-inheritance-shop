@@ -6,7 +6,7 @@ public class usaProdotto {
 
         Prodotto prod1,prod2;
         prod1=new Prodotto("shampoo","l'oreal",3.5F,0.2f);
-        System.err.println("Il primo prodotto è "
+        System.out.println("Il primo prodotto è "
                             + prod1.getNome()
                             + " della marca "
                             + prod1.getMarca()
@@ -21,7 +21,7 @@ public class usaProdotto {
 
     
         prod2=new Prodotto("libro","einaudi",25f,0.3f );
-        System.err.println("Il secondo prodotto è "
+        System.out.println("Il secondo prodotto è "
                             + prod2.getNome()
                             + " della marca "
                             + prod2.getMarca()
@@ -40,7 +40,7 @@ public class usaProdotto {
        
         Televisori prod3,prod4;
         prod3=new Televisori("Crystal UHD", "SAMSUNG", 336.99f, 1.2F, 43, false);
-        System.err.println("Il nome della TV è "
+        System.out.println("Il nome della TV è "
                            + prod3.getNome()
                            + " della marca "
                            + prod3.getMarca()
@@ -54,7 +54,7 @@ public class usaProdotto {
                            );
         
         prod4=new Televisori("24PHS6808", "PHILIPS", 179.98f, 1.2F, 24, true);
-        System.err.println("Il nome della TV è "
+        System.out.println("Il nome della TV è "
                             + prod4.getNome()
                             + " della marca "
                             + prod4.getMarca()
