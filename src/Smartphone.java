@@ -25,4 +25,19 @@ public class Smartphone extends Prodotto {
         this.ram = ram;
     }
 
+    @Override
+    public void stampaInformazioni(){
+        System.out.println("Il telefono è "
+                           + getNome()
+                           + " della marca "
+                           + getMarca()
+                           + " con il prezzo di "
+                           + prezzoTotale()
+                           + " euro e con l'IMEI di "
+                           + getIMEI()
+                           + " e con memoria di "
+                           + getRam()
+                           + " GB ram."
+                          );
+    }
 }

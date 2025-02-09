@@ -25,5 +25,19 @@ public class Televisori extends Prodotto {
         this.isSmart = isSmart;
     }
 
-
+    @Override
+   public void stampaInformazioni(){
+    System.out.println("Il nome della TV è "
+                     + getNome()
+                     + " della marca "
+                     + getMarca()
+                     + " con il prezzo totale di "
+                     + prezzoTotale()
+                     + " euro ed è larga di "
+                     + getDimensioni()
+                     + " pollici ed è "
+                     + isIsSmart()
+                     + " che è una TV smart."
+                    );
+   }
 }

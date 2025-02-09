@@ -6,7 +6,7 @@ public class usaProdotto {
 
         Prodotto prod1,prod2;
         prod1=new Prodotto("shampoo","l'oreal",3.5F,0.2f);
-        System.out.println("Il primo prodotto è "
+        System.out.println("Il prodotto è "
                             + prod1.getNome()
                             + " della marca "
                             + prod1.getMarca()
@@ -17,11 +17,11 @@ public class usaProdotto {
                             + " euro con il prezzo totale di "
                             + prod1.prezzoTotale()
                             + " euro.");
-
+        //prod1.stampaInformazioni();
 
     
         prod2=new Prodotto("libro","einaudi",25f,0.3f );
-        System.out.println("Il secondo prodotto è "
+        System.out.println("Il prodotto è "
                             + prod2.getNome()
                             + " della marca "
                             + prod2.getMarca()
@@ -52,6 +52,8 @@ public class usaProdotto {
                            + prod3.isIsSmart()
                            + " che è una TV smart."
                            );
+          
+        //prod3.stampaInformazioni();
         
         prod4=new Televisori("24PHS6808", "PHILIPS", 179.98f, 1.2F, 24, true);
         System.out.println("Il nome della TV è "
@@ -85,6 +87,7 @@ public class usaProdotto {
                            + prod5.getRam()
                            + " GB ram."
                           );
+       // prod5.stampaInformazioni();
 
         prod6= new Smartphone("iPHONE 14", "APPLE", 689f, 1.2f, "987654321", 128);
         System.out.println("Il telefono è "
@@ -118,6 +121,8 @@ public class usaProdotto {
                           + prod7.isWireless()
                           + " che sono wireless."
                         );
+
+       // prod7.stampaInformazioni();
 
 
         prod8=new Cuffie("WHCH520B", "Sonny", 34.99f, 0.3f, "nero", true);

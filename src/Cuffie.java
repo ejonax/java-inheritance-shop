@@ -25,4 +25,19 @@ public class Cuffie extends Prodotto{
         this.wireless = wireless;
     }
     
+    @Override
+    public void stampaInformazioni(){
+        System.out.println("Le cuffie sone "
+                             + getNome()
+                             + " della marca "
+                             + getMarca()
+                             + " con il prezzo di "
+                             + prezzoTotale()
+                             + " euro e di colore "
+                             + getColore()
+                             + " ed è "
+                             + isWireless()
+                             + " che sono wireless."
+                         );
+    }
 }

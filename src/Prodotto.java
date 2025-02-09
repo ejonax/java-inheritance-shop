@@ -60,4 +60,19 @@ protected  Prodotto( String nome, String marca, float prezzo, float iva){
        return this.prezzoTotale=this.prezzo + (this.prezzo * (this.iva/100));
     }
 
+    public void stampaInformazioni(){
+        System.out.println("Il prodotto è "
+                        + getNome()
+                        + " della marca "
+                        + getMarca()
+                        + " che costa "
+                        + getPrezzo()
+                        + " euro con l'iva "
+                        + getIva()
+                        + " euro con il prezzo totale di "
+                        + prezzoTotale()
+                        + " euro."
+                    );
+    }
+
 }
