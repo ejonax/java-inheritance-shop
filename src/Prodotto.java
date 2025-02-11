@@ -75,4 +75,10 @@ protected  Prodotto( String nome, String marca, float prezzo, float iva){
                     );
     }
 
+    @Override
+    public String toString() {
+        return "Prodotto [codice=" + codice + ", nome=" + nome + ", marca=" + marca + ", prezzo=" + prezzo + ", iva="
+                + iva + ", prezzoTotale=" + prezzoTotale + "]";
+    }
+
 }

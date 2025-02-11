@@ -26,7 +26,7 @@ public class Televisori extends Prodotto {
     }
 
     @Override
-   public void stampaInformazioni(){
+    public void stampaInformazioni(){
     System.out.println("Il nome della TV è "
                      + getNome()
                      + " della marca "
@@ -39,5 +39,15 @@ public class Televisori extends Prodotto {
                      + isIsSmart()
                      + " che è una TV smart."
                     );
-   }
+    }
+
+    @Override
+    public String toString() {
+        return "Il televisore ha le dimensioni di " + getDimensioni() + " pollici , ed è " + isIsSmart() + " che è smart "
+                + ", ha il codice " + getCodice() + ", ha il nome " + getNome()
+                + ", è della marca " + getMarca() + ", ha un prezzo di " + getPrezzo() + " euro, ha un iva di " + getIva()
+                + ", ha un prezzo totale di " + prezzoTotale() + " euro.";
+    }
+
+
 }

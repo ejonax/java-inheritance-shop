@@ -19,7 +19,7 @@ public class usaCarrello {
         Float ivaInput=prod1.nextFloat();
 
         Scanner risposta=new Scanner(System.in);
-        System.err.println("Stai scegliendo un Smarphone, un televisore o una cuffia");
+        System.out.println("Stai scegliendo un Smarphone, un televisore o una cuffia");
         String tipoProdotto=risposta.nextLine();
 
         Scanner properties=new Scanner(System.in);
@@ -32,6 +32,7 @@ public class usaCarrello {
 
             Televisori tv=new Televisori(nomeInput, marcaInput, prezzoInput,ivaInput, dimensioniInput, isSmartInput);
             //tv.stampaInformazioni();
+            System.out.println(tv.toString());
             carrello.setTelevisore(tv);
             
         }
@@ -43,6 +44,7 @@ public class usaCarrello {
 
             Smartphone smartphone=new Smartphone(nomeInput, marcaInput, prezzoInput, ivaInput, IMEI,ram);
             //smartphone.stampaInformazioni();
+            System.out.println(smartphone.toString());
             carrello.setSmartphone(smartphone);
 
         } 
@@ -52,13 +54,17 @@ public class usaCarrello {
             Boolean wireless=properties.nextBoolean();
 
             Cuffie cuffie=new Cuffie(nomeInput, marcaInput,prezzoInput, ivaInput, colore, wireless);
-           // cuffie.stampaInformazioni();
+            // cuffie.stampaInformazioni();
+            System.out.println(cuffie.toString());
             carrello.setCuffie(cuffie);
+           
            
         }
     }
         // la stampiamo dopo il for cosi cosi inseriti tutti tre prodotti: tv, smartphone e cuffia
-        carrello.stampaInformazioni();
+       // carrello.stampaInformazioni();
+        System.out.println(carrello.toString());
+        
     }
 
 }

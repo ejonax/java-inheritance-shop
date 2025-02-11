@@ -40,4 +40,19 @@ public class Cuffie extends Prodotto{
                              + " che sono wireless."
                          );
     }
+
+    @Override
+    public String toString() {
+        return " Le cuffie sono del colore " +  getColore() + ", ed è " + isWireless() + " che sono wireless "  
+                + ", hanno il codice " + getCodice() + ", hanno il nome " + getNome() 
+                + ", sono della marca " + getMarca() + ", hanno un prezzo di " + getPrezzo() 
+                + " euro, hanno un iva di " + getIva() + ", hanno il prezzo totale di " + prezzoTotale() + " euro.";
+    }
+
+    
+
+    
+    
+
+
 }

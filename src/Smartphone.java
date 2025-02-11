@@ -40,4 +40,17 @@ public class Smartphone extends Prodotto {
                            + " GB ram."
                           );
     }
+
+    @Override
+    public String toString() {
+        return "Lo smartphone ha IMEI " + getIMEI() + ", la memoria di " + getRam() + " GB di RAM" 
+                + ", ha il codice " + getCodice() + ", ha il nome " + getNome() + ", è della marca " + getMarca()
+                + ", ha un prezzo di " + getPrezzo() + " euro, ha un iva di " + getIva() 
+                + ", ha un prezzo totale di " + prezzoTotale()
+                + " euro.";
+    }
+
+    
+
+
 }

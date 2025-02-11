@@ -11,18 +11,7 @@ public class Carrello {
     }
     */
 
-    public void stampaInformazioni(){
-        System.out.println("La televisione ha le dimensioni di "
-                           + televisore.getDimensioni()
-                           + " pollici, lo smartphone ha "
-                           + smartphone.getRam()
-                           + " GB di memoria ed è "
-                           + cuffie.isWireless()
-                           +  " che le cuffie sono wireless."
-        
-        );
-    }
-
+   
     public Televisori getTelevisore() {
         return televisore;
     }
@@ -47,4 +36,25 @@ public class Carrello {
         this.smartphone = smartphone;
     }
 
+    
+    public void stampaInformazioni(){
+        System.out.println("La televisione ha le dimensioni di "
+                           + televisore.getDimensioni()
+                           + " pollici, lo smartphone ha "
+                           + smartphone.getRam()
+                           + " GB di memoria ed è "
+                           + cuffie.isWireless()
+                           +  " che le cuffie sono wireless."
+        
+                          );
+    }
+
+    
+    @Override
+    public String toString() {
+        return "Carrello [televisore="
+                + ", getTelevisore()=" + getTelevisore() 
+                + ", getCuffie()=" + getCuffie() 
+                + ", getSmartphone()=" + getSmartphone() + "]";
+    }
 }
